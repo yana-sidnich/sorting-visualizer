@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="App/dist/css/styles.css" />
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav>
+        <div class="header__leftSection">
+          <h1 class="header__title">Sorting Visualizer</h1>
+          <div class="header__functionButtons">
+            <button id="generateButton">Generate Array</button>
+            <!-- <button id="startButton">Start Sorting</button> -->
+          </div>
+        </div>
+
+        <div class="header__centerSection">
+          <div class="header__toggles">
+            <div class="sizeToggle">
+              <h3 class="sizeTitle">Array Size</h3>
+              <input
+                id="arraySize"
+                type="range"
+                class="arraySizeToggle"
+                min="1"
+                max="200"
+                value="100"
+              />
+            </div>
+            <div class="speedToggle">
+              <h3 class="speedTitle">Sorting Speed</h3>
+              <input
+                id="sortingSpeed"
+                type="range"
+                class="sortinSpeedToggle"
+                min="1"
+                max="20"
+                value="10"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="header__rightSection">
+          <div class="header__sortingMenuButtons">
+            <button id="insertion" class="sortingAlgo">Insertion Sort</button>
+            <button id="Merge" class="sortingAlgo">Merge Sort</button>
+            <button id="heap" class="sortingAlgo">Heap Sort</button>
+            <button id="bubble" class="sortingAlgo">Bubble Sort</button>
+            <button id="selection" class="sortingAlgo">Selection Sort</button>
+            <button id="quick" class="sortingAlgo">Quick Sort</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="sortingSection">
+      <div id="arrayContainer" class="arrayContainer"></div>
+    </section>
+
+    <script src="/App/js/SortingVisualizer.js"></script>
+  </body>
+</html>

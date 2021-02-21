@@ -1,0 +1,53 @@
+.header {
+  // margin-top: 1rem;
+  background: linear-gradient(to left top, blue, red) fixed;
+
+  nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "title toggles sortingButtons";
+    position: relative;
+    background: linear-gradient(to left top, blue, red) fixed;
+    padding-top: 1.0625rem;
+    padding-bottom: 1.0625rem;
+  }
+
+  &__title {
+    grid-area: title;
+    width: 400px;
+    font-size: 3rem;
+    margin: 0;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    background: -webkit-linear-gradient(darkgrey, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__functionButtons {
+    padding-top: 0.9rem;
+    button {
+      grid-area: title;
+      margin: 0.675rem;
+      text-align: center;
+    }
+  }
+
+  &__toggles {
+    grid-area: toggles;
+    padding-right: 8rem;
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__sortingMenuButtons {
+    grid-area: sortingButtons;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    padding-top: 4rem;
+  }
+}

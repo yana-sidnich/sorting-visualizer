@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Public Sans", sans-serif;
+  // background: linear-gradient(to left top, blue, red) fixed;
+
+  button {
+    position: relative;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to right, grey, lightgrey);
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+      opacity: 0.75;
+      transform: scale(1.05);
+    }
+  }
+
+  input[type="range"] {
+    width: 300px;
+  }
+
+  // h1 {
+  //   padding-top: 1rem;
+  // }
+
+  h3 {
+    font-weight: bold;
+
+    text-align: left;
+  }
+}
